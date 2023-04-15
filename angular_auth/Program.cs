@@ -39,7 +39,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-//Enable CORS - setting of policy should be above authentication
+//Enable CORS - setting of CORS policy should be above authentication
 app.UseCors(myAllowSpecificOrigins);
 app.UseAuthentication();
 
